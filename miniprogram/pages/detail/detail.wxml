@@ -1,0 +1,7 @@
+<view class="wrapper">
+  <view class="title">活动安排</view>
+  <view class="content">1.每个团员值两天，每天计为10个小时，每天安排两个团员。</view>
+  <view class="content">2.每个团员要拍照留存工作照。</view>
+  <view class="title">排序原理</view>
+  <view class="content">第一个人直接在第一位，之后的每一个人在前面的N个人所形成的的N+1个空位中随机抽取自己的位置，即从理论上保证每个人抽到每个位置的概率是相等的,两次抽取相互独立</view>
+</view>

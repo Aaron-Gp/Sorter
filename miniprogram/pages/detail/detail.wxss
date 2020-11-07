@@ -1,0 +1,12 @@
+.title{
+  font-size: 60rpx;
+  font-weight: bold;
+}
+.content{
+  font-size: 40rpx;
+  font-weight: 480;
+}
+.wrapper{
+  padding: 0 40rpx;
+  line-height: 3em;
+}

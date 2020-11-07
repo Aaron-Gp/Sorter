@@ -1,0 +1,28 @@
+<view class="header">
+  <text>{{inform}}</text>
+  <text class="navigate" bindtap="detail">点击此处查看详细说明</text>
+</view>
+
+<view class="mainContent">
+  <view class="viewWrapper">
+
+    <view class="title">第一次值守 已完成人数（{{num1}} / 18）</view>
+    <view class="viewFirst">
+      <view class="single" wx:for="{{array1}}" wx:key="index">
+        <image src="{{item.imgUrl}}" mode="scaleToFill"></image>
+        <view>{{index+1}}</view>
+      </view>
+    </view>
+
+    <view class="title">第二次值守 已完成人数（{{num2}} / 18）</view>
+    <view class="viewSecond">
+      <view class="single" wx:for="{{array2}}" wx:key="index">
+        <image src="{{item.imgUrl}}" mode="scaleToFill"></image>
+        <view>{{index+1}}</view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<button wx:if="{{!auth}}" type="primary" open-type="getUserInfo" bindgetuserinfo="userInfo" disabled="{{!showButton}}">Login</button>
+<button wx:if="{{auth}}" type="primary" disabled="{{remain==0}}" bindtap="add">{{button}}</button>
